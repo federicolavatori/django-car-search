@@ -1,0 +1,16 @@
+<h1>HomePage</h1>
+<form method = "get">
+  <input id="q" name="q" type="text" placeholder="your search...">
+
+</form>
+
+{% for item in cars %}
+
+  id: {{item.name}};
+  color: {{item.color}};
+  type: {{item.type}};
+  description: {{item.description}};
+
+  <br>
+
+{% endfor %}
